@@ -1,0 +1,305 @@
+{
+  "address": "0xeF3010782921AA00e9825d75dF61c3F3dE6E1026",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "listingFeeInitialized",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "NotEnoughListingFee",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "contract DigitalAssetContract",
+          "name": "assetAddress",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "ListAsset",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "contract DigitalAssetContract",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "customerAddr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "star",
+          "type": "uint8"
+        }
+      ],
+      "name": "Rating",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract DigitalAssetContract",
+          "name": "digitalAssetContract",
+          "type": "address"
+        }
+      ],
+      "name": "cancelListing",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract DigitalAssetContract",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "isAssetActive",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_assetPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address payable",
+          "name": "_parentAsset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_commissionRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "listAsset",
+      "outputs": [
+        {
+          "internalType": "contract DigitalAssetContract",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "listingFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract DigitalAssetContract",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "star",
+          "type": "uint8"
+        }
+      ],
+      "name": "rateAsset",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract DigitalAssetContract",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "rating",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract DigitalAssetContract",
+          "name": "digitalAssetContract",
+          "type": "address"
+        }
+      ],
+      "name": "reportPlagiarism",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x679550365460999b7b21db1b90e5f74745ce728a6bcec9ca57f568de8dd9017d",
+  "receipt": {
+    "to": null,
+    "from": "0xa441748577a62fa82aD9F9bee09A624B1b1C1BAF",
+    "contractAddress": "0xeF3010782921AA00e9825d75dF61c3F3dE6E1026",
+    "transactionIndex": 106,
+    "gasUsed": "1610173",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x067aec57e66eb864bfcde6050c1b8a51f2c6ad022eafdaaf44b151d570a2d230",
+    "transactionHash": "0x679550365460999b7b21db1b90e5f74745ce728a6bcec9ca57f568de8dd9017d",
+    "logs": [],
+    "blockNumber": 11172814,
+    "cumulativeGasUsed": "14515019",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "10000000000000000"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "04e3bc2e7cb0c7f7f0f1e3bc83622a2c",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.18+commit.87f61d96\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"listingFeeInitialized\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"NotEnoughListingFee\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"contract DigitalAssetContract\",\"name\":\"assetAddress\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"}],\"name\":\"ListAsset\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"contract DigitalAssetContract\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"customerAddr\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"star\",\"type\":\"uint8\"}],\"name\":\"Rating\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"contract DigitalAssetContract\",\"name\":\"digitalAssetContract\",\"type\":\"address\"}],\"name\":\"cancelListing\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract DigitalAssetContract\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"isAssetActive\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_assetPrice\",\"type\":\"uint256\"},{\"internalType\":\"address payable\",\"name\":\"_parentAsset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_commissionRate\",\"type\":\"uint256\"}],\"name\":\"listAsset\",\"outputs\":[{\"internalType\":\"contract DigitalAssetContract\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"listingFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract DigitalAssetContract\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"star\",\"type\":\"uint8\"}],\"name\":\"rateAsset\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract DigitalAssetContract\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"rating\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract DigitalAssetContract\",\"name\":\"digitalAssetContract\",\"type\":\"address\"}],\"name\":\"reportPlagiarism\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/dam-marketplace.sol\":\"DamMartketplace\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/proxy/Clones.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (proxy/Clones.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev https://eips.ethereum.org/EIPS/eip-1167[EIP 1167] is a standard for\\n * deploying minimal proxy contracts, also known as \\\"clones\\\".\\n *\\n * > To simply and cheaply clone contract functionality in an immutable way, this standard specifies\\n * > a minimal bytecode implementation that delegates all calls to a known, fixed address.\\n *\\n * The library includes functions to deploy a proxy using either `create` (traditional deployment) or `create2`\\n * (salted deterministic deployment). It also includes functions to predict the addresses of clones deployed using the\\n * deterministic method.\\n *\\n * _Available since v3.4._\\n */\\nlibrary Clones {\\n    /**\\n     * @dev Deploys and returns the address of a clone that mimics the behaviour of `implementation`.\\n     *\\n     * This function uses the create opcode, which should never revert.\\n     */\\n    function clone(address implementation) internal returns (address instance) {\\n        /// @solidity memory-safe-assembly\\n        assembly {\\n            // Cleans the upper 96 bits of the `implementation` word, then packs the first 3 bytes\\n            // of the `implementation` address with the bytecode before the address.\\n            mstore(0x00, or(shr(0xe8, shl(0x60, implementation)), 0x3d602d80600a3d3981f3363d3d373d3d3d363d73000000))\\n            // Packs the remaining 17 bytes of `implementation` with the bytecode after the address.\\n            mstore(0x20, or(shl(0x78, implementation), 0x5af43d82803e903d91602b57fd5bf3))\\n            instance := create(0, 0x09, 0x37)\\n        }\\n        require(instance != address(0), \\\"ERC1167: create failed\\\");\\n    }\\n\\n    /**\\n     * @dev Deploys and returns the address of a clone that mimics the behaviour of `implementation`.\\n     *\\n     * This function uses the create2 opcode and a `salt` to deterministically deploy\\n     * the clone. Using the same `implementation` and `salt` multiple time will revert, since\\n     * the clones cannot be deployed twice at the same address.\\n     */\\n    function cloneDeterministic(address implementation, bytes32 salt) internal returns (address instance) {\\n        /// @solidity memory-safe-assembly\\n        assembly {\\n            // Cleans the upper 96 bits of the `implementation` word, then packs the first 3 bytes\\n            // of the `implementation` address with the bytecode before the address.\\n            mstore(0x00, or(shr(0xe8, shl(0x60, implementation)), 0x3d602d80600a3d3981f3363d3d373d3d3d363d73000000))\\n            // Packs the remaining 17 bytes of `implementation` with the bytecode after the address.\\n            mstore(0x20, or(shl(0x78, implementation), 0x5af43d82803e903d91602b57fd5bf3))\\n            instance := create2(0, 0x09, 0x37, salt)\\n        }\\n        require(instance != address(0), \\\"ERC1167: create2 failed\\\");\\n    }\\n\\n    /**\\n     * @dev Computes the address of a clone deployed using {Clones-cloneDeterministic}.\\n     */\\n    function predictDeterministicAddress(\\n        address implementation,\\n        bytes32 salt,\\n        address deployer\\n    ) internal pure returns (address predicted) {\\n        /// @solidity memory-safe-assembly\\n        assembly {\\n            let ptr := mload(0x40)\\n            mstore(add(ptr, 0x38), deployer)\\n            mstore(add(ptr, 0x24), 0x5af43d82803e903d91602b57fd5bf3ff)\\n            mstore(add(ptr, 0x14), implementation)\\n            mstore(ptr, 0x3d602d80600a3d3981f3363d3d373d3d3d363d73)\\n            mstore(add(ptr, 0x58), salt)\\n            mstore(add(ptr, 0x78), keccak256(add(ptr, 0x0c), 0x37))\\n            predicted := keccak256(add(ptr, 0x43), 0x55)\\n        }\\n    }\\n\\n    /**\\n     * @dev Computes the address of a clone deployed using {Clones-cloneDeterministic}.\\n     */\\n    function predictDeterministicAddress(\\n        address implementation,\\n        bytes32 salt\\n    ) internal view returns (address predicted) {\\n        return predictDeterministicAddress(implementation, salt, address(this));\\n    }\\n}\\n\",\"keccak256\":\"0x01f055f5c26ba25d7f83e9aa9ba877fbea4d0bf22227de046ea67494bc932999\",\"license\":\"MIT\"},\"contracts/DigitalAssetContract.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\ncontract DigitalAssetContract {\\n    struct CustomerAssetData {\\n        string encryptedSymmetricKey;\\n        string encryptedFileHash;\\n        string ipfsURI;\\n    }\\n\\n    mapping(address => CustomerAssetData) private customerAddrToData;\\n    mapping(address => uint256) private userFund;\\n    mapping(address => uint256) private userFundWithdrawable;\\n    mapping(address => bool) private userComparedHashes;\\n    uint256 public digitalAssetPrice;\\n    address public owner;\\n    DigitalAssetContract public parentAsset;\\n    uint256 public commissionRate;\\n\\n    event CustomerFunded(address indexed customerAddr, uint256 indexed fundAmount);\\n    event AccessGranted(string indexed ipfsURI, address indexed customerAddr);\\n    event Refund(address indexed customerAddr, uint256 indexed fundAmount);\\n\\n    modifier onlyOwner() {\\n        require(msg.sender == owner, \\\"Caller is not the owner\\\");\\n        _;\\n    }\\n\\n    function initialize(\\n        uint256 assetPrice,\\n        address payable _parentAsset,\\n        uint256 _commissionRate,\\n        address _owner\\n    ) public {\\n        owner = _owner;\\n        digitalAssetPrice = assetPrice;\\n        parentAsset = DigitalAssetContract(_parentAsset);\\n        commissionRate = _commissionRate;\\n    }\\n\\n    function updatePrice(uint256 newPrice) public onlyOwner {\\n        digitalAssetPrice = newPrice;\\n    }\\n\\n    function registerRequest() public payable {\\n        require(msg.sender != owner, \\\"Caller is the owner\\\");\\n        require(msg.value >= digitalAssetPrice, \\\"Price not met\\\");\\n        require(userFund[msg.sender] < digitalAssetPrice, \\\"Already requested\\\");\\n\\n        delete customerAddrToData[msg.sender];\\n        userComparedHashes[msg.sender] = false;\\n\\n        userFund[msg.sender] += msg.value;\\n\\n        emit CustomerFunded(msg.sender, msg.value);\\n    }\\n\\n    function grantAccess(\\n        address customerAddr,\\n        string memory encryptedFileHash,\\n        string memory encryptedSymmetricKey,\\n        string memory ipfsURI\\n    ) external onlyOwner {\\n        require(\\n            bytes(customerAddrToData[customerAddr].ipfsURI).length == 0,\\n            \\\"Access already granted\\\"\\n        );\\n        require(userFund[customerAddr] >= digitalAssetPrice, \\\"Not registered\\\");\\n\\n        customerAddrToData[customerAddr] = CustomerAssetData(\\n            encryptedSymmetricKey,\\n            encryptedFileHash,\\n            ipfsURI\\n        );\\n\\n        emit AccessGranted(ipfsURI, customerAddr);\\n    }\\n\\n    function compareHashes(string memory customerHash) external {\\n        require(bytes(customerAddrToData[msg.sender].ipfsURI).length != 0, \\\"Access not granted\\\");\\n\\n        if (!compareStrings(customerHash, customerAddrToData[msg.sender].encryptedFileHash)) {\\n            uint256 fundAmount = userFund[msg.sender];\\n            userFund[msg.sender] = 0;\\n            userFundWithdrawable[msg.sender] += fundAmount;\\n\\n            delete customerAddrToData[msg.sender];\\n\\n            emit Refund(msg.sender, fundAmount);\\n            return;\\n        }\\n\\n        require(userFund[msg.sender] >= digitalAssetPrice, \\\"Not enough funds\\\");\\n\\n        uint256 commissionFee = (commissionRate * digitalAssetPrice) / 10**18;\\n        userFund[msg.sender] = 0;\\n        userFundWithdrawable[msg.sender] = 0;\\n\\n        userFundWithdrawable[owner] += digitalAssetPrice - commissionFee;\\n        userComparedHashes[msg.sender] = true;\\n\\n        (bool success, ) = address(parentAsset).call{value: commissionFee}(\\\"\\\");\\n        require(success, \\\"Transfer to parentAsset failed\\\");\\n    }\\n\\n    receive() external payable {\\n        userFundWithdrawable[owner] += msg.value;\\n    }\\n\\n    function getEncryptedSymmetricKey() public view returns (string memory) {\\n        require(userComparedHashes[msg.sender], \\\"Hashes not compared\\\");\\n        return customerAddrToData[msg.sender].encryptedSymmetricKey;\\n    }\\n\\n    function isCustomer(address sender) public view returns (bool) {\\n        if (userComparedHashes[sender]) {\\n            return true;\\n        }\\n        return false;\\n    }\\n\\n    function getIpfsURI(address customerAddr) public view returns (string memory) {\\n        require(bytes(customerAddrToData[customerAddr].ipfsURI).length != 0, \\\"Access not granted\\\");\\n        return customerAddrToData[customerAddr].ipfsURI;\\n    }\\n\\n    function withdrawFund() public {\\n        uint256 amountToWithdraw = userFundWithdrawable[msg.sender];\\n        require(amountToWithdraw > 0, \\\"No funds to withdraw\\\");\\n\\n        userFundWithdrawable[msg.sender] = 0;\\n        payable(msg.sender).transfer(amountToWithdraw);\\n    }\\n\\n    function cancelRequest() public {\\n        require(\\n            bytes(customerAddrToData[msg.sender].ipfsURI).length == 0,\\n            \\\"Access already granted\\\"\\n        );\\n        require(userFund[msg.sender] > 0, \\\"Not registered\\\");\\n\\n        userFundWithdrawable[msg.sender] += userFund[msg.sender];\\n        userFund[msg.sender] = 0;\\n\\n        delete customerAddrToData[msg.sender];\\n    }\\n\\n    function getPrice() public view returns (uint256) {\\n        return digitalAssetPrice;\\n    }\\n\\n    function getWithdrawableFund() public view returns (uint256) {\\n        return userFundWithdrawable[msg.sender];\\n    }\\n\\n    function compareStrings(string memory a, string memory b) internal pure returns (bool) {\\n        return keccak256(abi.encodePacked(a)) == keccak256(abi.encodePacked(b));\\n    }\\n}\\n\",\"keccak256\":\"0xba6e806a13a0c98eb1b05a42566e49e56be14250adeea3a9200e54ad506c6f31\",\"license\":\"MIT\"},\"contracts/dam-marketplace.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nimport \\\"@openzeppelin/contracts/proxy/Clones.sol\\\";\\nimport \\\"./DigitalAssetContract.sol\\\";\\n\\n// Declare errors\\nerror NotEnoughListingFee();\\n\\n// smart contract\\ncontract DamMartketplace {\\n    // State variables\\n    uint256 public immutable listingFee;\\n    address contractOnwer;\\n\\n    mapping(DigitalAssetContract => bool) public isAssetActive;\\n    mapping(DigitalAssetContract => mapping(address => uint8)) public rating;\\n\\n    // Event declaration\\n    event ListAsset(DigitalAssetContract indexed assetAddress, uint256 indexed price);\\n    event Rating(DigitalAssetContract indexed asset, address indexed customerAddr, uint8 star);\\n\\n    // Modifier declaration\\n    using Clones for address payable;\\n    address payable immutable template;\\n\\n    // Constructor\\n    constructor(uint256 listingFeeInitialized) {\\n        listingFee = listingFeeInitialized;\\n        contractOnwer = msg.sender;\\n        template = payable(new DigitalAssetContract());\\n    }\\n\\n    // Function definition\\n    function listAsset(\\n        uint256 _assetPrice,\\n        address payable _parentAsset,\\n        uint256 _commissionRate\\n    ) public payable returns (DigitalAssetContract) {\\n        if (msg.value < listingFee) {\\n            revert NotEnoughListingFee();\\n        }\\n        DigitalAssetContract digitalAssetContract = DigitalAssetContract(\\n            payable(template.clone())\\n        );\\n\\n        digitalAssetContract.initialize(_assetPrice, _parentAsset, _commissionRate, msg.sender);\\n        isAssetActive[digitalAssetContract] = true;\\n        emit ListAsset(digitalAssetContract, _assetPrice);\\n        return digitalAssetContract;\\n    }\\n\\n    function cancelListing(DigitalAssetContract digitalAssetContract) public {\\n        address assetOwner = digitalAssetContract.owner();\\n        require(msg.sender == assetOwner, \\\"Unauthorized\\\");\\n        isAssetActive[digitalAssetContract] = false;\\n    }\\n\\n    function rateAsset(DigitalAssetContract asset, uint8 star) public returns (uint8) {\\n        bool isCustomer = asset.isCustomer(msg.sender);\\n        require(isCustomer, \\\"Not a customer\\\");\\n        require(star <= 5, \\\"Invalid rating\\\");\\n\\n        rating[asset][msg.sender] = star;\\n        emit Rating(asset, msg.sender, star);\\n        return star;\\n    }\\n\\n    function reportPlagiarism(DigitalAssetContract digitalAssetContract) public {\\n        require(msg.sender == contractOnwer, \\\"Unauthorized\\\");\\n        isAssetActive[digitalAssetContract] = false;\\n    }\\n}\\n\",\"keccak256\":\"0x39450f973e76697aecefe7d97be35c21cfcd3f1ee9c7b89afcae3dbb618be486\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60c060405234801561001057600080fd5b50604051611c11380380611c1183398101604081905261002f9161008e565b6080819052600080546001600160a01b0319163317905560405161005290610081565b604051809103906000f08015801561006e573d6000803e3d6000fd5b506001600160a01b031660a052506100a7565b6113978061087a83390190565b6000602082840312156100a057600080fd5b5051919050565b60805160a0516107a76100d360003960006102f401526000818161012601526102ae01526107a76000f3fe6080604052600436106100705760003560e01c80636a1b7ecc1161004e5780636a1b7ecc14610114578063899730de14610156578063a2fa015714610176578063bcee6cb2146101b657600080fd5b806339602e0a146100755780634724da6f146100c7578063674e345d146100e9575b600080fd5b34801561008157600080fd5b506100b0610090366004610669565b600260209081526000928352604080842090915290825290205460ff1681565b60405160ff90911681526020015b60405180910390f35b3480156100d357600080fd5b506100e76100e23660046106a2565b6101d6565b005b6100fc6100f73660046106c6565b6102aa565b6040516001600160a01b0390911681526020016100be565b34801561012057600080fd5b506101487f000000000000000000000000000000000000000000000000000000000000000081565b6040519081526020016100be565b34801561016257600080fd5b506100b06101713660046106fe565b6103ea565b34801561018257600080fd5b506101a66101913660046106a2565b60016020526000908152604090205460ff1681565b60405190151581526020016100be565b3480156101c257600080fd5b506100e76101d13660046106a2565b61054d565b6000816001600160a01b0316638da5cb5b6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610216573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061023a9190610732565b9050336001600160a01b038216146102885760405162461bcd60e51b815260206004820152600c60248201526b155b985d5d1a1bdc9a5e995960a21b60448201526064015b60405180910390fd5b506001600160a01b03166000908152600160205260409020805460ff19169055565b60007f00000000000000000000000000000000000000000000000000000000000000003410156102ed576040516305b6701560e11b815260040160405180910390fd5b60006103217f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166105b7565b604051633b7e75bb60e11b8152600481018790526001600160a01b03868116602483015260448201869052336064830152919250908216906376fceb7690608401600060405180830381600087803b15801561037c57600080fd5b505af1158015610390573d6000803e3d6000fd5b5050506001600160a01b0382166000818152600160208190526040808320805460ff1916909217909155518893507fc660d6828d55c2244365f237dbb1b82988a490d55541f9be0af6433f3e173ee19190a3949350505050565b6040516328fd5e8360e01b815233600482015260009081906001600160a01b038516906328fd5e8390602401602060405180830381865afa158015610433573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610457919061074f565b9050806104975760405162461bcd60e51b815260206004820152600e60248201526d2737ba10309031bab9ba37b6b2b960911b604482015260640161027f565b60058360ff1611156104dc5760405162461bcd60e51b815260206004820152600e60248201526d496e76616c696420726174696e6760901b604482015260640161027f565b6001600160a01b03841660008181526002602090815260408083203380855290835292819020805460ff191660ff891690811790915590519081529192917f048ef56eac7a05bf3b35dc4bdbcd871b5d806f0064d5758e515f0910a709dfeb910160405180910390a3509092915050565b6000546001600160a01b031633146105965760405162461bcd60e51b815260206004820152600c60248201526b155b985d5d1a1bdc9a5e995960a21b604482015260640161027f565b6001600160a01b03166000908152600160205260409020805460ff19169055565b6000763d602d80600a3d3981f3363d3d373d3d3d363d730000008260601b60e81c176000526e5af43d82803e903d91602b57fd5bf38260781b17602052603760096000f090506001600160a01b03811661064c5760405162461bcd60e51b8152602060048201526016602482015275115490cc4c4d8dce8818dc99585d194819985a5b195960521b604482015260640161027f565b919050565b6001600160a01b038116811461066657600080fd5b50565b6000806040838503121561067c57600080fd5b823561068781610651565b9150602083013561069781610651565b809150509250929050565b6000602082840312156106b457600080fd5b81356106bf81610651565b9392505050565b6000806000606084860312156106db57600080fd5b8335925060208401356106ed81610651565b929592945050506040919091013590565b6000806040838503121561071157600080fd5b823561071c81610651565b9150602083013560ff8116811461069757600080fd5b60006020828403121561074457600080fd5b81516106bf81610651565b60006020828403121561076157600080fd5b815180151581146106bf57600080fdfea264697066735822122098022f32564b64c4c0e4334b78ddbc022bcc500bf591d0131edb0370a49c26e564736f6c63430008120033608060405234801561001057600080fd5b50611377806100206000396000f3fe6080604052600436106100f55760003560e01c806376fceb761161008a57806398d5fdca1161005957806398d5fdca1461030f578063d44de2b514610324578063df393a1914610339578063e07fa3c11461034157600080fd5b806376fceb7614610265578063851b16f5146102ba5780638d6cc56d146102cf5780638da5cb5b146102ef57600080fd5b806328fd5e83116100c657806328fd5e83146101dc5780633fdd3d941461020c578063472569d7146102395780635ea1d6f81461024f57600080fd5b80618363146101315780630626f47814610162578063183667cb14610184578063245c4a4d146101bc57600080fd5b3661012c576005546001600160a01b031660009081526002602052604081208054349290610124908490610f10565b925050819055005b600080fd5b34801561013d57600080fd5b50336000908152600260205260409020545b6040519081526020015b60405180910390f35b34801561016e57600080fd5b5061018261017d366004610fdb565b610356565b005b34801561019057600080fd5b506006546101a4906001600160a01b031681565b6040516001600160a01b039091168152602001610159565b3480156101c857600080fd5b506101826101d7366004611076565b610534565b3480156101e857600080fd5b506101fc6101f73660046110b3565b610876565b6040519015158152602001610159565b34801561021857600080fd5b5061022c6102273660046110b3565b6108a7565b60405161015991906110fb565b34801561024557600080fd5b5061014f60045481565b34801561025b57600080fd5b5061014f60075481565b34801561027157600080fd5b5061018261028036600461112e565b600580546001600160a01b03199081166001600160a01b039384161790915560049490945560068054909416921691909117909155600755565b3480156102c657600080fd5b506101826109c2565b3480156102db57600080fd5b506101826102ea366004611178565b610aea565b3480156102fb57600080fd5b506005546101a4906001600160a01b031681565b34801561031b57600080fd5b5060045461014f565b34801561033057600080fd5b5061022c610b43565b610182610c38565b34801561034d57600080fd5b50610182610dbb565b6005546001600160a01b031633146103af5760405162461bcd60e51b815260206004820152601760248201527621b0b63632b91034b9903737ba103a34329037bbb732b960491b60448201526064015b60405180910390fd5b6001600160a01b038416600090815260208190526040902060020180546103d590611191565b15905061041d5760405162461bcd60e51b81526020600482015260166024820152751058d8d95cdcc8185b1c9958591e4819dc985b9d195960521b60448201526064016103a6565b6004546001600160a01b03851660009081526001602052604090205410156104785760405162461bcd60e51b815260206004820152600e60248201526d139bdd081c9959da5cdd195c995960921b60448201526064016103a6565b6040805160608101825283815260208082018690528183018490526001600160a01b03871660009081529081905291909120815181906104b89082611219565b50602082015160018201906104cd9082611219565b50604082015160028201906104e29082611219565b50905050836001600160a01b0316816040516104fe91906112d9565b604051908190038120907f780f596ecb91e1e030f57631a828b4c1f227615c1e11422248348930f6d2160c90600090a350505050565b336000908152602081905260409020600201805461055190611191565b90506000036105975760405162461bcd60e51b81526020600482015260126024820152711058d8d95cdcc81b9bdd0819dc985b9d195960721b60448201526064016103a6565b336000908152602081905260409020600101805461063d9183916105ba90611191565b80601f01602080910402602001604051908101604052809291908181526020018280546105e690611191565b80156106335780601f1061060857610100808354040283529160200191610633565b820191906000526020600020905b81548152906001019060200180831161061657829003601f168201915b5050505050610e4a565b6106df5733600090815260016020908152604080832080549084905560029092528220805491928392610671908490610f10565b9091555050336000908152602081905260408120906106908282610ea4565b61069e600183016000610ea4565b6106ac600283016000610ea4565b5050604051819033907fbb28353e4598c3b9199101a66e0989549b659a59a54d2c27fbb183f1932c8e6d90600090a35050565b6004543360009081526001602052604090205410156107335760405162461bcd60e51b815260206004820152601060248201526f4e6f7420656e6f7567682066756e647360801b60448201526064016103a6565b6000670de0b6b3a764000060045460075461074e91906112f5565b610758919061130c565b336000908152600160209081526040808320839055600290915281205560045490915061078690829061132e565b6005546001600160a01b0316600090815260026020526040812080549091906107b0908490610f10565b909155505033600090815260036020526040808220805460ff1916600117905560065490516001600160a01b039091169083908381818185875af1925050503d806000811461081b576040519150601f19603f3d011682016040523d82523d6000602084013e610820565b606091505b50509050806108715760405162461bcd60e51b815260206004820152601e60248201527f5472616e7366657220746f20706172656e744173736574206661696c6564000060448201526064016103a6565b505050565b6001600160a01b03811660009081526003602052604081205460ff161561089f57506001919050565b506000919050565b6001600160a01b03811660009081526020819052604090206002018054606091906108d190611191565b90506000036109175760405162461bcd60e51b81526020600482015260126024820152711058d8d95cdcc81b9bdd0819dc985b9d195960721b60448201526064016103a6565b6001600160a01b0382166000908152602081905260409020600201805461093d90611191565b80601f016020809104026020016040519081016040528092919081815260200182805461096990611191565b80156109b65780601f1061098b576101008083540402835291602001916109b6565b820191906000526020600020905b81548152906001019060200180831161099957829003601f168201915b50505050509050919050565b33600090815260208190526040902060020180546109df90611191565b159050610a275760405162461bcd60e51b81526020600482015260166024820152751058d8d95cdcc8185b1c9958591e4819dc985b9d195960521b60448201526064016103a6565b33600090815260016020526040902054610a745760405162461bcd60e51b815260206004820152600e60248201526d139bdd081c9959da5cdd195c995960921b60448201526064016103a6565b3360009081526001602090815260408083205460029092528220805491929091610a9f908490610f10565b909155505033600090815260016020908152604080832083905590829052812090610aca8282610ea4565b610ad8600183016000610ea4565b610ae6600283016000610ea4565b5050565b6005546001600160a01b03163314610b3e5760405162461bcd60e51b815260206004820152601760248201527621b0b63632b91034b9903737ba103a34329037bbb732b960491b60448201526064016103a6565b600455565b3360009081526003602052604090205460609060ff16610b9b5760405162461bcd60e51b815260206004820152601360248201527212185cda195cc81b9bdd0818dbdb5c185c9959606a1b60448201526064016103a6565b3360009081526020819052604090208054610bb590611191565b80601f0160208091040260200160405190810160405280929190818152602001828054610be190611191565b8015610c2e5780601f10610c0357610100808354040283529160200191610c2e565b820191906000526020600020905b815481529060010190602001808311610c1157829003601f168201915b5050505050905090565b6005546001600160a01b03163303610c885760405162461bcd60e51b815260206004820152601360248201527221b0b63632b91034b9903a34329037bbb732b960691b60448201526064016103a6565b600454341015610cca5760405162461bcd60e51b815260206004820152600d60248201526c141c9a58d9481b9bdd081b595d609a1b60448201526064016103a6565b6004543360009081526001602052604090205410610d1e5760405162461bcd60e51b8152602060048201526011602482015270105b1c9958591e481c995c5d595cdd1959607a1b60448201526064016103a6565b33600090815260208190526040812090610d388282610ea4565b610d46600183016000610ea4565b610d54600283016000610ea4565b5050336000908152600360209081526040808320805460ff19169055600190915281208054349290610d87908490610f10565b9091555050604051349033907f64f1edbf25386a79095e69d7fd793e7fefb7cbc9eeab14f47bddd092b97654e390600090a3565b3360009081526002602052604090205480610e0f5760405162461bcd60e51b81526020600482015260146024820152734e6f2066756e647320746f20776974686472617760601b60448201526064016103a6565b336000818152600260205260408082208290555183156108fc0291849190818181858888f19350505050158015610ae6573d6000803e3d6000fd5b600081604051602001610e5d91906112d9565b6040516020818303038152906040528051906020012083604051602001610e8491906112d9565b604051602081830303815290604052805190602001201490505b92915050565b508054610eb090611191565b6000825580601f10610ec0575050565b601f016020900490600052602060002090810190610ede9190610ee1565b50565b5b80821115610ef65760008155600101610ee2565b5090565b634e487b7160e01b600052601160045260246000fd5b80820180821115610e9e57610e9e610efa565b6001600160a01b0381168114610ede57600080fd5b634e487b7160e01b600052604160045260246000fd5b600082601f830112610f5f57600080fd5b813567ffffffffffffffff80821115610f7a57610f7a610f38565b604051601f8301601f19908116603f01168101908282118183101715610fa257610fa2610f38565b81604052838152866020858801011115610fbb57600080fd5b836020870160208301376000602085830101528094505050505092915050565b60008060008060808587031215610ff157600080fd5b8435610ffc81610f23565b9350602085013567ffffffffffffffff8082111561101957600080fd5b61102588838901610f4e565b9450604087013591508082111561103b57600080fd5b61104788838901610f4e565b9350606087013591508082111561105d57600080fd5b5061106a87828801610f4e565b91505092959194509250565b60006020828403121561108857600080fd5b813567ffffffffffffffff81111561109f57600080fd5b6110ab84828501610f4e565b949350505050565b6000602082840312156110c557600080fd5b81356110d081610f23565b9392505050565b60005b838110156110f25781810151838201526020016110da565b50506000910152565b602081526000825180602084015261111a8160408501602087016110d7565b601f01601f19169190910160400192915050565b6000806000806080858703121561114457600080fd5b84359350602085013561115681610f23565b925060408501359150606085013561116d81610f23565b939692955090935050565b60006020828403121561118a57600080fd5b5035919050565b600181811c908216806111a557607f821691505b6020821081036111c557634e487b7160e01b600052602260045260246000fd5b50919050565b601f82111561087157600081815260208120601f850160051c810160208610156111f25750805b601f850160051c820191505b81811015611211578281556001016111fe565b505050505050565b815167ffffffffffffffff81111561123357611233610f38565b611247816112418454611191565b846111cb565b602080601f83116001811461127c57600084156112645750858301515b600019600386901b1c1916600185901b178555611211565b600085815260208120601f198616915b828110156112ab5788860151825594840194600190910190840161128c565b50858210156112c95787850151600019600388901b60f8161c191681555b5050505050600190811b01905550565b600082516112eb8184602087016110d7565b9190910192915050565b8082028115828204841417610e9e57610e9e610efa565b60008261132957634e487b7160e01b600052601260045260246000fd5b500490565b81810381811115610e9e57610e9e610efa56fea2646970667358221220392c5a04de1799772d60e6c5f2ec28ecc0fa2df3298d75cabfa09e68d216608664736f6c63430008120033",
+  "deployedBytecode": "0x6080604052600436106100705760003560e01c80636a1b7ecc1161004e5780636a1b7ecc14610114578063899730de14610156578063a2fa015714610176578063bcee6cb2146101b657600080fd5b806339602e0a146100755780634724da6f146100c7578063674e345d146100e9575b600080fd5b34801561008157600080fd5b506100b0610090366004610669565b600260209081526000928352604080842090915290825290205460ff1681565b60405160ff90911681526020015b60405180910390f35b3480156100d357600080fd5b506100e76100e23660046106a2565b6101d6565b005b6100fc6100f73660046106c6565b6102aa565b6040516001600160a01b0390911681526020016100be565b34801561012057600080fd5b506101487f000000000000000000000000000000000000000000000000000000000000000081565b6040519081526020016100be565b34801561016257600080fd5b506100b06101713660046106fe565b6103ea565b34801561018257600080fd5b506101a66101913660046106a2565b60016020526000908152604090205460ff1681565b60405190151581526020016100be565b3480156101c257600080fd5b506100e76101d13660046106a2565b61054d565b6000816001600160a01b0316638da5cb5b6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610216573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061023a9190610732565b9050336001600160a01b038216146102885760405162461bcd60e51b815260206004820152600c60248201526b155b985d5d1a1bdc9a5e995960a21b60448201526064015b60405180910390fd5b506001600160a01b03166000908152600160205260409020805460ff19169055565b60007f00000000000000000000000000000000000000000000000000000000000000003410156102ed576040516305b6701560e11b815260040160405180910390fd5b60006103217f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166105b7565b604051633b7e75bb60e11b8152600481018790526001600160a01b03868116602483015260448201869052336064830152919250908216906376fceb7690608401600060405180830381600087803b15801561037c57600080fd5b505af1158015610390573d6000803e3d6000fd5b5050506001600160a01b0382166000818152600160208190526040808320805460ff1916909217909155518893507fc660d6828d55c2244365f237dbb1b82988a490d55541f9be0af6433f3e173ee19190a3949350505050565b6040516328fd5e8360e01b815233600482015260009081906001600160a01b038516906328fd5e8390602401602060405180830381865afa158015610433573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610457919061074f565b9050806104975760405162461bcd60e51b815260206004820152600e60248201526d2737ba10309031bab9ba37b6b2b960911b604482015260640161027f565b60058360ff1611156104dc5760405162461bcd60e51b815260206004820152600e60248201526d496e76616c696420726174696e6760901b604482015260640161027f565b6001600160a01b03841660008181526002602090815260408083203380855290835292819020805460ff191660ff891690811790915590519081529192917f048ef56eac7a05bf3b35dc4bdbcd871b5d806f0064d5758e515f0910a709dfeb910160405180910390a3509092915050565b6000546001600160a01b031633146105965760405162461bcd60e51b815260206004820152600c60248201526b155b985d5d1a1bdc9a5e995960a21b604482015260640161027f565b6001600160a01b03166000908152600160205260409020805460ff19169055565b6000763d602d80600a3d3981f3363d3d373d3d3d363d730000008260601b60e81c176000526e5af43d82803e903d91602b57fd5bf38260781b17602052603760096000f090506001600160a01b03811661064c5760405162461bcd60e51b8152602060048201526016602482015275115490cc4c4d8dce8818dc99585d194819985a5b195960521b604482015260640161027f565b919050565b6001600160a01b038116811461066657600080fd5b50565b6000806040838503121561067c57600080fd5b823561068781610651565b9150602083013561069781610651565b809150509250929050565b6000602082840312156106b457600080fd5b81356106bf81610651565b9392505050565b6000806000606084860312156106db57600080fd5b8335925060208401356106ed81610651565b929592945050506040919091013590565b6000806040838503121561071157600080fd5b823561071c81610651565b9150602083013560ff8116811461069757600080fd5b60006020828403121561074457600080fd5b81516106bf81610651565b60006020828403121561076157600080fd5b815180151581146106bf57600080fdfea264697066735822122098022f32564b64c4c0e4334b78ddbc022bcc500bf591d0131edb0370a49c26e564736f6c63430008120033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 644,
+        "contract": "contracts/dam-marketplace.sol:DamMartketplace",
+        "label": "contractOnwer",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 649,
+        "contract": "contracts/dam-marketplace.sol:DamMartketplace",
+        "label": "isAssetActive",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_contract(DigitalAssetContract)634,t_bool)"
+      },
+      {
+        "astId": 656,
+        "contract": "contracts/dam-marketplace.sol:DamMartketplace",
+        "label": "rating",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_contract(DigitalAssetContract)634,t_mapping(t_address,t_uint8))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(DigitalAssetContract)634": {
+        "encoding": "inplace",
+        "label": "contract DigitalAssetContract",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_uint8)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint8)",
+        "numberOfBytes": "32",
+        "value": "t_uint8"
+      },
+      "t_mapping(t_contract(DigitalAssetContract)634,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_contract(DigitalAssetContract)634",
+        "label": "mapping(contract DigitalAssetContract => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_contract(DigitalAssetContract)634,t_mapping(t_address,t_uint8))": {
+        "encoding": "mapping",
+        "key": "t_contract(DigitalAssetContract)634",
+        "label": "mapping(contract DigitalAssetContract => mapping(address => uint8))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_uint8)"
+      },
+      "t_uint8": {
+        "encoding": "inplace",
+        "label": "uint8",
+        "numberOfBytes": "1"
+      }
+    }
+  }
+}

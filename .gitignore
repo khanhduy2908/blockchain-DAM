@@ -6,3 +6,10 @@ coverage/
 coverage.json
 gas-report.txt
 gas-report-compareHashesfail.txt
+
+.env
+deployer-wallet.txt
+
+# Secrets
+.env
+deployer-wallet.txt
